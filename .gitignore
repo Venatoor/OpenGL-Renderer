@@ -1,0 +1,70 @@
+# --- VISUAL STUDIO ---
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.aps
+*.rc
+*.VC.db
+*.VC.opendb
+.vsconfig
+
+# --- BUILD OUTPUTS ---
+# CMake generated build files
+build/
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeCache.txt
+*.cmake
+
+# Compiler outputs
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+*.obj
+*.o
+*.pch
+*.ilk
+*.pdb
+*.exp
+*.iobj
+*.ipdb
+
+# Build directories
+bin/
+obj/
+x64/
+x86/
+Debug/
+Release/
+out/
+.debug/
+*.out/
+
+# --- VCPKG ---
+# Ignore downloaded dependencies (recreatable)
+vcpkg_installed/
+
+# BUT KEEP vcpkg.json - THIS IS IMPORTANT!
+#!vcpkg.json
+
+# --- ASSETS CACHE ---
+*.ilk
+*.log
+*.tlog
+
+# --- OS FILES ---
+.DS_Store
+Thumbs.db
+
+# --- KEEP THESE (IMPORTANT) ---
+# CMakeLists.txt - YOUR BUILD CONFIG
+# vcpkg.json - YOUR DEPENDENCIES  
+# src/ - YOUR SOURCE CODE
+# assets/ - YOUR ASSETS (shaders, textures)
+# third_party/ - MANUAL DEPENDENCIES LIKE STB
